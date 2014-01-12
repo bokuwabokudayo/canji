@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+{% autoescape true %}
+<html>
+  <head>
+    <title>Bootstrap 101 Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/client/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/client/css/justified-nav.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="/client/js/bootstrap.min.js"></script>
+</head>
+<body>
+<a href="/search"><img src="/client/images/logo.png" alt="canji"></a>
+<div class="row">
+    <div class="col-md-4">
+    <div class="background-slant-10px">
+    <div class="text-overflow-in-background-slant">
+        <div class="row">
+        <div class="col-md-6">
+            <p>最終ログイン</p>
+        </div>
+        <div class="col-md-6 text-color-amethyst">
+            <p><canvas id="status_online" width="12" height="12"></canvas> オンライン</p>
+        </div>
+        </div>
+    </div></div><!-- /background-slant-10px -->
+    <div class="background-slant-10px">
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#detail-about-friend" data-toggle="tab">友達について</a></li>
+            <li><a href="#detail-about-me" data-toggle="tab">幹事について</a></li>
+            <li><a href="#detail-about-you" data-toggle="tab">相手の希望</a></li>
+        </ul>
+    <div class="tab-content text-overflow-in-background-slant">
+        <div class="tab-pane active" id="detail-about-friend">
+            <div class="row">
+            <div class="col-md-6">
+                <p>友達</p>
+            </div>
+            <div class="col-md-6 text-color-amethyst">
+                <p>友達</p>
+            </div>
+            </div>
+        </div><!-- /tab-pane" id="detail-about-friend" -->
+        <div class="tab-pane" id="detail-about-me">
+            <div class="row">
+            <div class="col-md-6">
+                <p>私</p>
+            </div>
+            <div class="col-md-6 text-color-amethyst">
+                <p>私</p>
+            </div>
+            </div>
+        </div><!-- /tab-pane" id="detail-about-me" -->
+        <div class="tab-pane" id="detail-about-you">
+            <div class="row">
+            <div class="col-md-6">
+                <p>あなた</p>
+            </div>
+            <div class="col-md-6 text-color-amethyst">
+                <p>あなた</p>
+            </div>
+            </div>
+        </div><!-- /tab-pane" id="detail-about-you" -->
+    </div>
+    </div><!-- /background-slant-10px -->
+    <div style="margin-bottom: 10px;">
+        <a href="#" class="btn btn-default btn-lg btn-block" data-toggle="tab"><i class="glyphicon glyphicon-warning-sign"></i> この人を違反報告する</a>
+    </div>
+    </div><!-- /col-md-4 -->
+    <div class="col-md-8">
+    <div class="background-slant-10px">
+    <div class="text-overflow-in-background-slant">
+        <img src="/client/images/1.png" width="700" alt="main photo" name="ph01">
+            <table border="0" width="470" cellpadding="0" cellspacing="0">
+        <tr>
+        <td width="120">
+        <a href="javascript:document.ph01.src = '/client/images/1.png'; void(0);">
+        <img src="/client/images/1.png" width="100" height="70" alt="写真1" border="0"></a><br>
+        <a href="javascript:document.ph01.src = '/client/images/2.png'; void(0);">
+        <img src="/client/images/2.png" width="100" height="70" alt="写真2" border="0" vspace="10"></a><br>
+        <a href="javascript:document.ph01.src = '/client/images/3.png'; void(0);">
+        <img src="/client/images/3.png" width="100" height="70" alt="写真3" border="0"></a><br></td>
+        <td width="350" align="right"><img src="/client/images/1.png" width="329" height="230" alt="拡大写真" name="ph01"></td>
+        </tr>
+        </table>
+    </div>
+    </div>
+    </div><!-- /col-md-8 -->
+    
+    </div><!-- /row -->
+</body>
+</html>
+{% endautoescape %}
